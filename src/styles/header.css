@@ -1,8 +1,9 @@
-
-#headerImage {
+body {
     background-image: url(../images/backgroundgif.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100%;
+    background-attachment: fixed;
+    /* overflow: hidden;
+    position: absolute; */
 }

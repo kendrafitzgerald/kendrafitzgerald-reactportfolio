@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import resumePhoto from '../../images/resume2.png'
 // export default function Resume() {
 //     return(
@@ -11,6 +11,13 @@ import React from 'react';
 // };
 import {Document, Page} from 'react-pdf';
 import resumePDF from '../../utils/resume2.pdf';
+import { pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
+
 const styles = {
     body: {
       background: "#000018",
@@ -36,13 +43,18 @@ const styles = {
   };
 
 export default function Resume(){
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
     return(
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>
-            <a href={resumePDF}> Resume</a>
-            {/* <Document file={resumePDF}>
-                <Page pageNumber={1}/>
-            </Document> */}
+            <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
+              <Page pageNumber={pageNumber}/>
+            </Document>
         </div>
     );
 }

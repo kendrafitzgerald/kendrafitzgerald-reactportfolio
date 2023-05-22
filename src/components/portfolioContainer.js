@@ -31,11 +31,12 @@ function PortfolioContainer() {
     };
     const handlePageChange = (page) => setCurrentPage(page);
     return (
-        <div id='headerImage'>
+    
+        <div>
             <NavTabs currentPage = {currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}
             {/* <footer style={styles.subtitle}>hello</footer> */}
-        </div>
+            </div>
     );
 }
 export default PortfolioContainer;
