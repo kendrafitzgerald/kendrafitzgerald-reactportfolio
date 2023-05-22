@@ -39,9 +39,10 @@ export default function Resume(){
     return(
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>
-            <Document file={resumePDF}>
+            <a href={resumePDF}> Resume</a>
+            {/* <Document file={resumePDF}>
                 <Page pageNumber={1}/>
-            </Document>
+            </Document> */}
         </div>
     );
 }
