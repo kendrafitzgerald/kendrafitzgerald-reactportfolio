@@ -10,8 +10,9 @@ import React, {useState} from 'react';
 //     );
 // };
 import {Document, Page} from 'react-pdf';
-import resumePDF from '../../utils/resume2.pdf';
+import resumePDF from '../../utils/Kendra-Fitzgerald-Resume.pdf';
 import { pdfjs } from 'react-pdf';
+  import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -41,7 +42,6 @@ const styles = {
     //   marginRight: 'auto'
     // }
   };
-
 export default function Resume(){
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -52,6 +52,7 @@ export default function Resume(){
     return(
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>
+            <a href={resumePDF} style={styles.header}>Click Here to Download My Resume</a>
             <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
               <Page pageNumber={pageNumber}/>
             </Document>
