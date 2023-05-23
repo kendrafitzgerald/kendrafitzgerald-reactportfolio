@@ -8,6 +8,7 @@ const styles = {
         color: 'white',
         paddingTop: 85,
         fontFamily: 'Rockwell, Courier Bold, Courier'
+        
     },
     subtitle: {
         color: 'white',

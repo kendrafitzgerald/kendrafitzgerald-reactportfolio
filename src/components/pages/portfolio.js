@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
 const styles = {
   body: {
     background: "#000018",
@@ -10,6 +12,14 @@ const styles = {
   header: {
     color: "white",
     fontFamily: "Rockwell, Courier Bold, Courier",
+    textAlign: 'center'
+  },
+  subtitle: {
+    fontFamily: "Rockwell, Courier Bold, Courier",
+    fontSize: 20,
+    color: "white",
+    fontStyle: 'italic',
+    textAlign: 'center'
   },
   imgCard: {
     background: "rgba(0, 0, 0, 0",
@@ -37,15 +47,16 @@ const styles = {
   },
   github: {
     fontFamily: "Rockwell, Courier Bold, Courier",
-    fontSize: 15,
-    color: 'white'
+    fontSize: 18,
+    color: 'white',
+    textDecoration: 'none'
   }
 };
 export default function Portfolio({ projects }) {
   return (
     <div>
       <h1 style={styles.header}>Portfolio</h1>
-      <h2 style={styles.title}>Click on a Project to See it in Action!</h2>
+      <h2 style={styles.subtitle}>Click on a Project to See it in Action!</h2>
       <div className="row">
         {projects.map((project) => (
           <div
@@ -63,7 +74,7 @@ export default function Portfolio({ projects }) {
                 </a>
               </h2>
               <h3 style={styles.tech}>{project.tech}</h3>
-              <a href={project.gitHub} style={styles.github}> GitHub Repo
+              <a href={project.gitHub} style={styles.github}> <FontAwesomeIcon icon={faGithub}/> Repo
               </a>
             </div>
           </div>
