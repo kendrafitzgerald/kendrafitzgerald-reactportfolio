@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const styles = {
   body: {
     background: "#000018",
@@ -63,7 +65,7 @@ export default function Portfolio({ projects }) {
                 alt="project main page or placeholder"
               />
               <h3 style={styles.tech}>{project.tech}</h3>
-              <a href={project.gitHub} style={styles.github}>GitHub Repo</a>
+              <a href={project.gitHub} style={styles.github}><FontAwesomeIcon icon='fa-brands fa-github'/></a>
             </div>
           </div>
         ))}
