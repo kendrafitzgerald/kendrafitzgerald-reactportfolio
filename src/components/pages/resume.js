@@ -1,18 +1,10 @@
 import React, {useState} from 'react';
-// import resumePhoto from '../../images/resume2.png'
-// export default function Resume() {
-//     return(
-//         <div className='card' style={styles.body}>
-//             <h1 style={styles.header}>Resume</h1>
-//             <img style={styles.resumePic} src={resumePhoto} alt='Kendra Fitzgerald Resume'/>
-
-//         </div>
-//     );
-// };
 import {Document, Page} from 'react-pdf';
 import resumePDF from '../../utils/Kendra-Fitzgerald-Resume.pdf';
 import { pdfjs } from 'react-pdf';
-  import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faDownload} from '@fortawesome/free-solid-svg-icons'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
@@ -31,16 +23,6 @@ const styles = {
       color: "white",
       fontFamily: 'Rockwell, Courier Bold, Courier'
     }
-    // },
-    // text: {
-    //   color: "white",
-    // },
-    // resumePic: {
-    //   width: 500,
-    //   height: '100vh',
-    //   marginLeft: 'auto',
-    //   marginRight: 'auto'
-    // }
   };
 export default function Resume(){
   const [numPages, setNumPages] = useState(null);
@@ -52,7 +34,8 @@ export default function Resume(){
     return(
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>
-            <a href={resumePDF} style={styles.header}>Click Here to Download My Resume</a>
+            <a href={resumePDF} download ="kendrafitzgeraldResume.pdf" style={styles.header}
+            >Click Here to Download My Resume <FontAwesomeIcon icon={faDownload}/></a>
             <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
               <Page pageNumber={pageNumber}/>
             </Document>

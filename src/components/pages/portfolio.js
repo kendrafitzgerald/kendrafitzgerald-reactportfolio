@@ -45,6 +45,7 @@ export default function Portfolio({ projects }) {
   return (
     <div>
       <h1 style={styles.header}>Portfolio</h1>
+      <h2 style={styles.title}>Click on a Project to See it in Action!</h2>
       <div className="row">
         {projects.map((project) => (
           <div
@@ -62,7 +63,7 @@ export default function Portfolio({ projects }) {
                 </a>
               </h2>
               <h3 style={styles.tech}>{project.tech}</h3>
-              <a href={project.gitHub} style={styles.github}>
+              <a href={project.gitHub} style={styles.github}> GitHub Repo
               </a>
             </div>
           </div>
