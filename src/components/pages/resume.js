@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 import {Document, Page} from 'react-pdf';
 import resumePDF from '../../utils/Kendra-Fitzgerald-Resume.pdf';
@@ -34,7 +35,7 @@ export default function Resume(){
     return(
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>
-            <a href={resumePDF} download ="kendrafitzgeraldResume.pdf" style={styles.header}
+            <a href={resumePDF} download ="kendrafitzgeraldResume.pdf"style={styles.header}
             >Click Here to Download My Resume <FontAwesomeIcon icon={faDownload}/></a>
             <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
               <Page pageNumber={pageNumber}/>
