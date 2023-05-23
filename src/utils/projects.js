@@ -7,7 +7,7 @@ import svg from '../images/svg.png';
 const projects = [
     {
         id: 1,
-        name: 'Nexus: College Social Network',
+        name: 'Nexus',
         tech: 'Full-Stack App',
         img: nexus,
         gitHub:'https://github.com/kendrafitzgerald/nexus-app' ,
@@ -24,7 +24,7 @@ const projects = [
     {
         id: 3,
         name: 'Social Media Backend',
-        tech: 'MongoDB, Express.JS, Node.JS',
+        tech: 'MongoDB, Express, Node',
         img: socialBackend,
         gitHub: 'https://github.com/kendrafitzgerald/social-network-backend',
         link: 'https://drive.google.com/file/d/1NXM6MDB3p2jTS2yfKGxPVTdqVzz_mHiv/view'
@@ -33,7 +33,7 @@ const projects = [
     {
         id: 4,
         name: 'Employee Tracker App',
-        tech: 'JS, MySQL, Node.JS',
+        tech: 'JS, MySQL, Node',
         img: employeeTracker,
         gitHub:'https://github.com/kendrafitzgerald/employee-tracker-app',
         link: 'https://drive.google.com/file/d/13mydzZWi0pzDuB5eg_Fx4jNIstAkcU9N/view'
@@ -51,7 +51,7 @@ const projects = [
     {
         id: 6,
         name: 'SVG Logo Maker',
-        tech: 'JS, Inquirer, NodeJS',
+        tech: 'JS, Inquirer, Node',
         img: svg,
         gitHub: 'https://github.com/kendrafitzgerald/logo-maker-app',
         link: 'https://drive.google.com/file/d/1txD3VGXJOVofDDc_r3vIBsQdLbMFLZRU/view'
