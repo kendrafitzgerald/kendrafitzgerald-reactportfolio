@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import validateEmail from "../../utils/helpers.js";
-
+//styles for contact page
 const styles = {
   body: {
     background: "#000018",
@@ -33,11 +33,12 @@ const styles = {
   },
 };
 export default function Contact() {
+  // below are the useState variables needed to take user input
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+//function to handle input change once user types in values
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
@@ -51,6 +52,7 @@ export default function Contact() {
       setMessage(inputValue);
     }
   };
+  //function that alerts user if their mouse leaves a field without writing content
   const mouseLeaveHandler = (e) => {
     const { value, name } = e.target;
     if (name === "name" && value.trim() === "") {
@@ -63,6 +65,7 @@ export default function Contact() {
       setErrorMessage("");
     }
   };
+  //function to handle the form submit and alerts user if their email is invalid/a section is blank
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const { value, name } = e.target;
@@ -91,6 +94,7 @@ export default function Contact() {
   };
 
   return (
+    // form with input conditions passed in
     <div className="card" style={styles.body}>
       <div className="card-body">
         <h1 style={styles.header}>Contact Me!</h1>

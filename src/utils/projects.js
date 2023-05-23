@@ -4,6 +4,7 @@ import socialBackend from '../images/socialbackend.png';
 import employeeTracker from '../images/employeetracker.png';
 import weather from '../images/weatherusage.png';
 import svg from '../images/svg.png';
+//array of projects to go in portfolio with name, tech used, and links
 const projects = [
     {
         id: 1,

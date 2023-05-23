@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons'
-
+//styles for footer
 const styles = {
 
     footer: {
@@ -19,6 +19,7 @@ const styles = {
 }
 
 export default function Footer() {
+    //renders footer with icons that link to various sites on all pages
     return (
         <footer style={styles.footer}>
         <a style= {styles.icon} href='https://github.com/kendrafitzgerald'><FontAwesomeIcon icon={faGithub}/></a>

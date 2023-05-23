@@ -9,8 +9,9 @@ import '../styles/header.css';
 import projects from '../utils/projects'
 
 function PortfolioContainer() {
+    //sets current page state to default of About Me
     const [currentPage, setCurrentPage] = useState('AboutMe');
-
+    //renders pages based on what the current page is
     const renderPage = () => {
         if(currentPage === 'AboutMe') {
             return <AboutMe/>;
@@ -25,6 +26,7 @@ function PortfolioContainer() {
     };
     const handlePageChange = (page) => setCurrentPage(page);
     return (
+        //adds NavTabs and Footer components
         <div>
             <NavTabs currentPage = {currentPage} handlePageChange={handlePageChange}/>
             {renderPage()}

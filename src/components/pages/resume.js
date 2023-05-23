@@ -7,12 +7,12 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDownload} from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin, faTwitter} from '@fortawesome/free-brands-svg-icons'
-
+//function necessary to render PDF doc on screen
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
   import.meta.url,
 ).toString();
-
+//styles for resume page
 const styles = {
     body: {
       background: "#000018",
@@ -39,13 +39,15 @@ const styles = {
       },
   };
 export default function Resume(){
+  //useState variables needed for PDF rendering
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-
+//function needed to render PDF
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
     return(
+      //renders PDF doc and allows for download
       <div>
         <div className='card' style={styles.body}>
             <h1 style={styles.header}>Resume</h1>

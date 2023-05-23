@@ -1,6 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
+//styling for portfolio
 const styles = {
   body: {
     background: "#000018",
@@ -53,6 +54,8 @@ const styles = {
   }
 };
 export default function Portfolio({ projects }) {
+  //function maps over each project in array from projects.js, renders each project as a card
+  //with specific data for said project
   return (
     <div>
       <h1 style={styles.header}>Portfolio</h1>

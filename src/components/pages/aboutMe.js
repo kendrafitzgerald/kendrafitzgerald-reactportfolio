@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePic from '../../images/profile-pic-professional.png'
+//styles for about me elements
 const styles = {
   body: {
     background: "#000018",
@@ -25,7 +26,7 @@ const styles = {
 };
 export default function AboutMe() {
   return (
-
+// about me page with styles added
       <div className='card' style={styles.body}>
         <div className='card-body' >
         <h1 style={styles.header}>About Me

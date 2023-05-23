@@ -1,14 +1,14 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPerson, faFile, faPhoneFlip, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
+//styles for nav tabs
 const styles = {
     name: {
-        marginTop: '10px',
+        marginTop: '50px',
         fontSize: '50px',
         color: 'white',
         paddingTop: 85,
-        fontFamily: 'Rockwell, Courier Bold, Courier'
-        
+        fontFamily: 'Rockwell, Courier Bold, Courier',
     },
     subtitle: {
         color: 'white',
@@ -19,6 +19,7 @@ const styles = {
 }
 export default function NavTabs({ currentPage, handlePageChange }) {
   return (
+    //conditionally renders page change and shows current page depending on which nav tab is clicked
     <div className="header">
       <h1 style={styles.name}>Kendra Fitzgerald</h1>
       <p style={styles.subtitle}>FullStack Developer</p>
