@@ -4,16 +4,9 @@ import AboutMe from './pages/aboutMe';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
 import Resume from './pages/resume';
-import '../styles/header.css'
-// const styles={
-//     subtitle: {
-//         color: 'white',
-//         fontSize: '20px',
-//         fontFamily: 'Rockwell, Courier Bold, Courier',
-//         fontStyle: 'italic',
-//         marginTop: 'auto'
-//     }
-// }
+import '../styles/header.css';
+import projects from '../utils/projects'
+
 function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('AboutMe');
 
@@ -22,7 +15,7 @@ function PortfolioContainer() {
             return <AboutMe/>;
         }
         if(currentPage === 'Portfolio') {
-            return <Portfolio/>;
+            return <Portfolio projects={projects}/>;
         }
         if (currentPage === 'Contact') {
             return <Contact/>;
