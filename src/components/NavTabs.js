@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPerson, faFile, faPhoneFlip, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
 const styles = {
     name: {
         marginTop: '10px',
@@ -29,7 +31,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "AboutMe" ? "nav-link active" : "nav-link"
               }
             >
-              About Me
+             <FontAwesomeIcon icon={faPerson}/> About Me
             </a>
           </li>
           <li className="nav-item">
@@ -40,6 +42,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                 currentPage === "Portfolio" ? "nav-link active" : "nav-link"
               }
             >
+               <FontAwesomeIcon icon={faFolderOpen}/>
               Portfolio
             </a>
           </li>
@@ -50,7 +53,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
               className={
                 currentPage === "Contact" ? "nav-link active" : "nav-link"
               }
-            >
+            >  <FontAwesomeIcon icon={faPhoneFlip}/>
               Contact
             </a>
           </li>
@@ -61,7 +64,7 @@ export default function NavTabs({ currentPage, handlePageChange }) {
               className={
                 currentPage === "Resume" ? "nav-link active" : "nav-link"
               }
-            >
+            > <FontAwesomeIcon icon={faFile}/>
               Resume
             </a>
           </li>
