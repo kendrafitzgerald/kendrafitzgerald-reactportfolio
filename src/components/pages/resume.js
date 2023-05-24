@@ -53,9 +53,6 @@ export default function Resume(){
             <h1 style={styles.header}>Resume</h1>
             <a href={resumePDF} download ="kendrafitzgeraldResume.pdf"style={styles.header}
             >Click Here to Download My Resume <FontAwesomeIcon icon={faDownload}/></a>
-            <Document style={styles.pdf} file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
-              <Page pageNumber={pageNumber}/>
-            </Document>
         </div>
          <footer style={styles.footer}>
          <a style= {styles.icon} href='https://github.com/kendrafitzgerald'><FontAwesomeIcon icon={faGithub}/></a>
