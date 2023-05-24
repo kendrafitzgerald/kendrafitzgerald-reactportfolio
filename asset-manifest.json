@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kendrafitzgerald-reactportfolio/static/css/main.a98cd2ee.css",
-    "main.js": "/kendrafitzgerald-reactportfolio/static/js/main.a2aa981e.js",
+    "main.js": "/kendrafitzgerald-reactportfolio/static/js/main.b7e1b874.js",
     "static/media/backgroundgif.png": "/kendrafitzgerald-reactportfolio/static/media/backgroundgif.39da37e3abddc4f60827.png",
     "static/media/profile-pic-professional.png": "/kendrafitzgerald-reactportfolio/static/media/profile-pic-professional.987910e059a2d178298a.png",
     "static/media/weatherusage.png": "/kendrafitzgerald-reactportfolio/static/media/weatherusage.3f644023bc6e00794cd7.png",
@@ -14,10 +14,10 @@
     "static/media/socialbackend.png": "/kendrafitzgerald-reactportfolio/static/media/socialbackend.6c5856ea16bde96ebe19.png",
     "index.html": "/kendrafitzgerald-reactportfolio/index.html",
     "main.a98cd2ee.css.map": "/kendrafitzgerald-reactportfolio/static/css/main.a98cd2ee.css.map",
-    "main.a2aa981e.js.map": "/kendrafitzgerald-reactportfolio/static/js/main.a2aa981e.js.map"
+    "main.b7e1b874.js.map": "/kendrafitzgerald-reactportfolio/static/js/main.b7e1b874.js.map"
   },
   "entrypoints": [
     "static/css/main.a98cd2ee.css",
-    "static/js/main.a2aa981e.js"
+    "static/js/main.b7e1b874.js"
   ]
 }
