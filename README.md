@@ -2,61 +2,21 @@
 
 ## Description
 
-Hi! I'm Kendra and this project is a portfolio of some of my recent works as a Software Developer
+Hi! I'm Kendra and this project is a portfolio of some of my recent works as a Software Developer. A portfolio is essential to a developer as it is a site where potential employers can view the developer's projects, resume, biography, and contact the developer. I was motivated to create this portfolio to meet the above criteria and to showcase the skills I have learned working with React and JavaScript. In this project, I utilized React and JS primarily to conditionally render the components of the portfolio, creating my first React app. Not only does this project solve the problem of building a professional portfolio, it also solves the problem of applying my existing and newly learned skills to create a functioning application.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
+When you first visit my portfolio site, the 'About Me' page will render first on screen. To view the 'Portfolio', 'Contact', and 'Resume' sections, simply click on the corresponding navigation tab. If you wish to return to the 'About Me' page, reload the site or click on the corresponding tab. On the 'Portfolio' page, if you click a the photo of the project you will be redirected to the deployed site or a walkthrough video if it is a backend app. If you click on the GitHub icon/repo text, you will be redirected to the repo of that project on GitHub. On the 'Contact Me' page, there are fields to enter your name, email, and a message. You will be notified if you fail to enter a field or if you enter an invalid email. The button under the form will send your message. On the 'Resume' page, my resume is rendered on screen as a PDF and there is a link to click that will download my resume onto your device. Finally, there is a GitHub, LinkedIn, and Twitter icon as the footer on the page. If you click on one of these icons, you will be redirected to the site of that icon.
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
+![portfolio first page](./src/images/portfolio.png)
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+This application uses React to render content and styling on the page. Bootstrap is used for styling and Font Awesome is used for icons.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
+This app utlizes an MIT license.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+If you would like to contribute to this project, please reach out to me via email @ kendrajfitzgerald@gmai.com. I would love to hear any input on how to improve my portfolio.
