@@ -34,20 +34,20 @@ const projects = [
     },
     {
         id: 4,
+        name: 'Social Media Backend',
+        tech: 'MongoDB, Express, Node',
+        img: socialBackend,
+        gitHub: 'https://github.com/kendrafitzgerald/social-network-backend',
+        link: 'https://drive.google.com/file/d/1NXM6MDB3p2jTS2yfKGxPVTdqVzz_mHiv/view'
+        
+    },
+    {
+        id: 5,
         name: 'Employee Tracker App',
         tech: 'JS, MySQL, Node',
         img: employeeTracker,
         gitHub:'https://github.com/kendrafitzgerald/employee-tracker-app',
         link: 'https://drive.google.com/file/d/13mydzZWi0pzDuB5eg_Fx4jNIstAkcU9N/view'
-        
-    },
-    {
-        id: 5,
-        name: 'Weather Forecast App',
-        tech: 'JS, HTML5, CSS3',
-        img: weather,
-        gitHub: 'https://github.com/kendrafitzgerald/weather-forecast-app',
-        link: 'https://kendrafitzgerald.github.io/weather-forecast-app/'
         
     },
     {
