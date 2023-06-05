@@ -4,6 +4,7 @@ import socialBackend from '../images/socialbackend.png';
 import employeeTracker from '../images/employeetracker.png';
 import weather from '../images/weatherusage.png';
 import svg from '../images/svg.png';
+import soundswap from '../images/sound-swap.png'
 //array of projects to go in portfolio with name, tech used, and links
 const projects = [
     {
@@ -24,11 +25,11 @@ const projects = [
     },
     {
         id: 3,
-        name: 'Social Media Backend',
-        tech: 'MongoDB, Express, Node',
-        img: socialBackend,
-        gitHub: 'https://github.com/kendrafitzgerald/social-network-backend',
-        link: 'https://drive.google.com/file/d/1NXM6MDB3p2jTS2yfKGxPVTdqVzz_mHiv/view'
+        name: 'Sound Swap',
+        tech: 'MERN Stack',
+        img: soundswap,
+        gitHub: 'https://github.com/kendrafitzgerald/sound-swap',
+        link: 'https://sound-swap-app.herokuapp.com/'
         
     },
     {
